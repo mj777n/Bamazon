@@ -4,11 +4,11 @@ var newTotal = 0;
 
 var connection = mysql.createConnection({
   host: "localhost",
-  // Port being used 
+    // Port being used 
   port: 3306,
-  // My username
+    // My username
   user: "root",
-  // My password and database name 
+    // My password and database name 
   password: "Birdie88!",
   database: "bamazon"
 });
@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId);
-  // call function start() to begin program
+    // call function start() to begin program
   start();
 });
 //************** function start() ************
@@ -25,21 +25,24 @@ function start() {
   console.log("\n"+"************ WELCOME ************");
   console.log("*    WE ARE OPEN FOR BUSINESS   *");
   console.log("*********************************");
-  console.log("\n"+"Please purchase from the following store items:"+"\n");
-    // connect to database 
+  console.log("\n"+"Please select from the following options:"+"\n");
+    // connect to database  
   connection.query("SELECT * FROM products", function(err, res) {
     if (err) throw err;
       console.log("Item# | "+"     Product Name       |"+"  Price");
       console.log("--------------------------------------");
-    // loop through database results, stored in "inventory"
-    // for displaying inventory to user
-    // **option to convert this next block to function displayInventory(res)
+      // loop through database results, stored in "inventory"
+      // for displaying inventory to user
+      // **option to convert this next block to function displayInventory(res)
     var inventory = res;
-      for (i = 0; i < inventory.length; i++) 
-        {console.log(inventory[i].item_id+"  | "+inventory[i].product_name+" | "+inventory[i].price);
-        }; 
-      console.log("----------------------------------------"+"\n"); 
-    // start a ".then" to check inventory
+    for (i = 0; i < inventory.length; i++) 
+      {
+        console.log(inventory[i].item_id+"  | "+inventory[i].product_name+" | "+inventory[i].price);
+      }; 
+    console.log("----------------------------------------"+"\n"); 
+      // option to use ".then" to check inventory
+      // call function getOrder
+      // displays inventory and prompts user for selection and qty
     getOrder();
   });
 }
@@ -69,7 +72,7 @@ function getOrder() {
         console.log("\n"+"*** Sorry. There is not enough in stock to fill your order."+"\n");  
           // send user back to order ** add option to show qty of item selected
         getOrder();
-      } else { 
+        } else { 
           // display "RECEIPT" with item, qty, & total   
           var newBalance = res[0].stock_quantity - answer.howMany;
           if (answer.howMany > 1) {
@@ -101,16 +104,16 @@ function updateInventory(answer, newBalance) {
       {
         item_id : answer.item
       }
-    ],
-    
+    ],   
     function(err, res) {
       if (err) throw err;
-      // console.log("newTotal line 109: "+newTotal);
-      console.log("database updated!");
+        // console.log("newTotal line 109: "+newTotal);
+      console.log("\n"+"----------------------");
+        // console.log("Continue Shopping? (Y/N)");
+        // send user back to main screen
       start();
     }
-  );       
+  );  // end connection.query
       // connection.end();
-}
-  // );
-// }
+}  // end function updatedInventory()
+

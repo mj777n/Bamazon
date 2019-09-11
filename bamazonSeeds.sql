@@ -14,7 +14,7 @@ CREATE TABLE products(
 );
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (1001, "Wilson Catcher's Glove ", "Sports", 85.79, 5);
+VALUES (1001, "Wilson Catcher's Glove", "Sports", 85.79, 5);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUES (1002, "Easton Youth Bat", "Sports", 249.99, 5);
