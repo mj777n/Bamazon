@@ -45,7 +45,7 @@ Also as a Manager or Owner, view your total sales by department and create new d
 **_addInventory()_**  
   Displays the current inventory and prompts user to select (using arrow keys) which specific product to add.  
 NOTE: This is to add more stock of an existing product item.  
-Prompt user for Item# and quantity to add. Similar to __getOrder().__
+Prompt user for Item# and quantity to add. Similar to __getOrder().__  
 Then add quantity into database and provide a receipt of item(s) added, how many and new current total.  
 -Then call *function __start()__* to return to Main Menu display.
 
