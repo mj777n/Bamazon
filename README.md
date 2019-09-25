@@ -64,13 +64,15 @@ Prompt user to add the following:
 Then update bamazon database with new product using data elements from user.  
 -Then call *function __start()__* to return to Main Menu display.
 
-##Demo of Ap (using TinyTake)##
+## ************************************************************* ##
+## Demo of Ap (using TinyTake) ##
 
-[link to bamanzonManager demo!] (https://ttprivatenew.s3.amazonaws.com/pulse/mjnorato-aol/attachments/11557841/TinyTake25-09-2019-03-50-51.mp4)
+[link to bamanzonManager demo!] 
+(https://ttprivatenew.s3.amazonaws.com/pulse/mjnorato-aol/attachments/11557841/TinyTake25-09-2019-03-50-51.mp4)
 
 
 
-![GitHub Logo](/images/logo.png)
+[GitHub Logo!](/images/logo.png)
 <!-- Format: ![Alt Text](url) -->
 
 Contains MySQL homework command-line ap
