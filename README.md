@@ -16,20 +16,19 @@ Also as a Manager or Owner, view your total sales by department and create new d
 * github for repository
 
 ## functions used
-**_start()_**
-  Displays "Welcome - Open for Business" banner
-  Then Prompt user to select from Main Menu.  CHOICES ARE:  
-    1. __View Products For Sale__  
-    2. __View Low Inventory__  
-    3. __Add to Inventory__  
-    4. __Add New Product to Inventory__  
-    5. __Exit__  
+**_start()_**   
+  Displays "Welcome - Open for Business" banner.  
+  Then Prompt user to select from Main Menu.  THE CHOICES ARE:  
+     1. __View Products For Sale__  
+     2. __View Low Inventory__  
+     3. __Add to Inventory__  
+     4. __Add New Product to Inventory__  5. __Exit__  
 
 **_getOrder()_**
   Displays a list of the products for sale in the inventory.  
   Then prompts user for:  
     1. Enter Item# of item to purchase.  
-    2. Enter quantity to purchase.  
+    2. Enter quantity to purchase.   
   Checks "bamazon database" for enough product in stock to fulfull the request
 
   Fulfill the order and display a confirmation "receipt" for the user.
@@ -45,21 +44,21 @@ Also as a Manager or Owner, view your total sales by department and create new d
 
 **_addInventory()_**
   Displays the current inventory and prompts user to select (using arrow keys) product to add.  
-NOTE This is to add more stock of an existing product item.
+NOTE This is to add more stock of an existing product item.  
   - Prompt user for Item# and quantity to add. Similar to getOrder().
   - Then add quantity into database and provide a receipt of item(s) added, how many and new current total.  
 Then call *function __start()__* to return to Main Menu display.
 
 **_addNewProduct()_**
-NOTE: This is to add a completly new product item to the database.
-  Prompt user to add the following:
-    1. __Product Name__
-    2. __Item# (or SKU#)__
-    3. __Category__
+NOTE: This is to add a completly new product item to the database.  
+Prompt user to add the following:
+  1. __Product Name__
+  2. __Item# (or SKU#)__
+  3. __Category__
     NOTE: We list the current *categories* available for user.
     (Electronics, Sports, Fashion)
-    4. __Quantity__
-    5. __Sell Price__
+  4. __Quantity__
+  5. __Sell Price__
 
 -Then update bamazon database with new product using data elements from user.
 
