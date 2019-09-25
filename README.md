@@ -19,11 +19,11 @@ Also as a Manager or Owner, view your total sales by department and create new d
 **_start()_**
   Displays "Welcome - Open for Business" banner
   Then Prompt user to select from Main Menu.  CHOICES ARE:
-  1. __View Products For Sale__
-  2. __View Low Inventory__
-  3. __Add to Inventory__
-  4. __Add New Product to Inventory__
-  5. __Exit__
+    1. __View Products For Sale__
+    2. __View Low Inventory__
+    3. __Add to Inventory__
+    4. __Add New Product to Inventory__
+    5. __Exit__
 
 **_getOrder()_**
   Displays a list of the products for sale in the inventory.  
@@ -53,9 +53,9 @@ Then call *function __start()__* to return to Main Menu display.
 **_addNewProduct()_**
 NOTE: This is to add a completly new product item to the database.
  - Prompt user to add the following:
-  1) __Product Name__
-  2) __Item# (or SKU#)__
-  3) __Category__
+    1) __Product Name__
+    2) __Item# (or SKU#)__
+    3) __Category__
     NOTE: We list the current *categories* available for user.
     (Electronics, Sports, Fashion)
   4) __Quantity__
@@ -64,6 +64,8 @@ NOTE: This is to add a completly new product item to the database.
 -Then update bamazon database with new product using data elements from user.
 
 Then call *function __start()__* to return to Main Menu display.
+
+
 
 ![GitHub Logo](/images/logo.png)
 <!-- Format: ![Alt Text](url) -->
