@@ -71,6 +71,7 @@ Then update bamazon database with new product using data elements from user.
 (https://ttprivatenew.s3.amazonaws.com/pulse/mjnorato-aol/attachments/11557841/TinyTake25-09-2019-03-50-51.mp4)
 
 
+[DEMO ME!](https://ttprivatenew.s3.amazonaws.com/pulse/mjnorato-aol/attachments/11557841/TinyTake25-09-2019-03-50-51.mp4)
 
 [GitHub Logo!](/images/logo.png)
 <!-- Format: ![Alt Text](url) -->
