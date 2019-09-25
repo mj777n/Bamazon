@@ -4,7 +4,6 @@ Shop the Bamazon store, browse the products For Sale as a Customer.
 Or as a Manager check your inventory and add current or new products to inventory.
 Also as a Manager or Owner, view your total sales by department and create new departments.
 
-## Getting Started
 
 ## Built With
 * Javascript
@@ -15,6 +14,57 @@ Also as a Manager or Owner, view your total sales by department and create new d
 1. mysql
 2. inquire  
 * github for repository
+
+## functions used
+*start()*
+  Displays "Welcome - Open for Business" banner
+  Then Prompt user to select from Main Menu - CHOICES ARE:
+  1. __View Products For Sale__
+  2. __View Low Inventory__
+  3. __Add to Inventory__
+  4. __Add New Product to Inventory__
+  5. __Exit__
+
+*getOrder()*
+  Displays a list of the product for sale in the inventory.
+  Then prompts user for:
+    1. Enter Item# of item to purchase.
+    2. Enter quantity to purchase.
+  Checks "bamazon database" for enough product in stock to fulfull the request
+
+  Fulfill the order and display a confirmation "receipt" for the user
+
+  Then calls *function __updateInventory()__*
+
+*updateInventory()*
+  Update the database using Item# of product and quantity purchased.
+   -Then call *function __start()__* to return to Main Menu display.
+
+*lowInventory()*
+  Per instructions, any product of less than 5 units in inventory is displayed.
+   -Then call *function __start()__* to return to Main Menu display.
+
+*addInventory()*
+  Displays the current inventory and prompts user to select (using arrow keys) product to add.  
+NOTE This is to add more stock of an existing product item.
+  - Prompt user for Item# and quantity to add. Similar to getOrder().
+  - Then add quantity into database and provide a receipt of item(s) added, how many and new current total
+Then call *function __start()__* to return to Main Menu display.
+
+*addNewProduct()*
+NOTE: This is to add a completly new product item to the database.
+ - Prompt user to add the following:
+  1) Product Name
+  2) Item# (or SKU#)
+  3) Category
+    NOTE: We list the current *categories* available for user.
+    (Electronics, Sports, Fashion)
+  4) Quantity
+  5) Sell Price
+
+Update bamazon database with new product using data elements from user.
+
+Then call *function __start()__* to return to Main Menu display.
 
 ![GitHub Logo](/images/logo.png)
 <!-- Format: ![Alt Text](url) -->
