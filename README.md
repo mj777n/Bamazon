@@ -53,13 +53,13 @@ Then call *function __start()__* to return to Main Menu display.
 **_addNewProduct()_**
 NOTE: This is to add a completly new product item to the database.
  - Prompt user to add the following:
-    1) __Product Name__
-    2) __Item# (or SKU#)__
-    3) __Category__
+    1. __Product Name__
+    2. __Item# (or SKU#)__
+    3. __Category__
     NOTE: We list the current *categories* available for user.
     (Electronics, Sports, Fashion)
-  4) __Quantity__
-  5) __Sell Price__
+    4. __Quantity__
+    5. __Sell Price__
 
 -Then update bamazon database with new product using data elements from user.
 
