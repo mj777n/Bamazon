@@ -43,11 +43,11 @@ Also as a Manager or Owner, view your total sales by department and create new d
    -Then call *function __start()__* to return to Main Menu display.
 
 **_addInventory()_**  
-  Displays the current inventory and prompts user to select (using arrow keys) product to add.  
-NOTE This is to add more stock of an existing product item.  
-  Prompt user for Item# and quantity to add. Similar to __getOrder().__
-  Then add quantity into database and provide a receipt of item(s) added, how many and new current total.  
-Then call *function __start()__* to return to Main Menu display.
+  Displays the current inventory and prompts user to select (using arrow keys) which specific product to add.  
+NOTE: This is to add more stock of an existing product item.  
+Prompt user for Item# and quantity to add. Similar to __getOrder().__
+Then add quantity into database and provide a receipt of item(s) added, how many and new current total.  
+-Then call *function __start()__* to return to Main Menu display.
 
 **_addNewProduct()_**  
 NOTE: This is to add a completly new product item to the database.  
@@ -60,8 +60,8 @@ Prompt user to add the following:
   4. __Quantity__
   5. __Sell Price__
 
-Then update bamazon database with new product using data elements from user.
-Then call *function __start()__* to return to Main Menu display.
+Then update bamazon database with new product using data elements from user.  
+-Then call *function __start()__* to return to Main Menu display.
 
 
 
