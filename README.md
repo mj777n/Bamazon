@@ -18,7 +18,7 @@ Also as a Manager or Owner, view your total sales by department and create new d
 ## functions used
 **_start()_**
   Displays "Welcome - Open for Business" banner
-  Then Prompt user to select from Main Menu.  CHOICES ARE:
+  Then Prompt user to select from Main Menu.  CHOICES ARE:  
     1. __View Products For Sale__
     2. __View Low Inventory__
     3. __Add to Inventory__
@@ -52,7 +52,7 @@ Then call *function __start()__* to return to Main Menu display.
 
 **_addNewProduct()_**
 NOTE: This is to add a completly new product item to the database.
- - Prompt user to add the following:
+  Prompt user to add the following:
     1. __Product Name__
     2. __Item# (or SKU#)__
     3. __Category__
