@@ -148,10 +148,10 @@ function updateInventory(answer, newBalance) {
 // **** 4) function lowInventory() ********
 //
 function lowInventory() {
-  connection.query("SELECT * FROM products WHERE stock_quantity < 10",    
+  connection.query("SELECT * FROM products WHERE stock_quantity < 5",    
   function(error, res) {
   if (error) throw err;
-    console.log("\n"+"Product with less than 10 units in inventory");
+    console.log("\n"+"Product with less than 5 units in inventory");
     console.log("*********************************************"); 
     console.log("Item# | "+"   Product Name        |"+"  Qty");
     console.log("--------------------------------------");
